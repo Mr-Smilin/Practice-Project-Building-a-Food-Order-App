@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Practice-Project-Building-a-Food-Order-App/static/css/main.2953b363.chunk.css",
+    "main.js": "/Practice-Project-Building-a-Food-Order-App/static/js/main.47da1609.chunk.js",
+    "main.js.map": "/Practice-Project-Building-a-Food-Order-App/static/js/main.47da1609.chunk.js.map",
+    "runtime-main.js": "/Practice-Project-Building-a-Food-Order-App/static/js/runtime-main.6ef9de51.js",
+    "runtime-main.js.map": "/Practice-Project-Building-a-Food-Order-App/static/js/runtime-main.6ef9de51.js.map",
+    "static/js/2.4f4fe33e.chunk.js": "/Practice-Project-Building-a-Food-Order-App/static/js/2.4f4fe33e.chunk.js",
+    "static/js/2.4f4fe33e.chunk.js.map": "/Practice-Project-Building-a-Food-Order-App/static/js/2.4f4fe33e.chunk.js.map",
+    "index.html": "/Practice-Project-Building-a-Food-Order-App/index.html",
+    "static/css/main.2953b363.chunk.css.map": "/Practice-Project-Building-a-Food-Order-App/static/css/main.2953b363.chunk.css.map",
+    "static/js/2.4f4fe33e.chunk.js.LICENSE.txt": "/Practice-Project-Building-a-Food-Order-App/static/js/2.4f4fe33e.chunk.js.LICENSE.txt",
+    "static/media/meals.2971f633.jpg": "/Practice-Project-Building-a-Food-Order-App/static/media/meals.2971f633.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6ef9de51.js",
+    "static/js/2.4f4fe33e.chunk.js",
+    "static/css/main.2953b363.chunk.css",
+    "static/js/main.47da1609.chunk.js"
+  ]
+}
