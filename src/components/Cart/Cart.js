@@ -10,7 +10,7 @@ import CartContext from '../../store/cart-context';
 
 import Checkout from './Checkout';
 
-const Cart = props => {
+const Cart = ({ onHideCart }) => {
   const [isCheckout, setIsCheckout] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [didSubmit, setDidSubmit] = useState(false);
@@ -40,7 +40,6 @@ const Cart = props => {
   };
   const cartItems = (
     <ul className={classes['cart-items']}>
-      {/* {[{ id: 'c1', name: 'Sushi', amount: 2, price: 12.99 }].map(item => <li>{item.name}</li>)} */}
       {cartCtx.items.map(item => (
         <CartItem
           key={item.id}
@@ -52,7 +51,7 @@ const Cart = props => {
     </ul>);
   const hasItem = cartCtx.items.length > 0;
   const modalActions = (<div className={classes.actions}>
-    <button className={classes['button--alt']} onClick={props.onHideCart}>Close</button>
+    <button className={classes['button--alt']} onClick={onHideCart}>Close</button>
     {hasItem && <button className={classes.button} onClick={orderHandler}>Order</button>}
   </div>);
   const cartModalContent = (
@@ -62,19 +61,19 @@ const Cart = props => {
         <span>Total Amount</span>
         <span>{totalAmount}</span>
       </div>
-      {isCheckout ? <Checkout onConfirm={submitOrderHandler} onCancel={props.onHideCart} /> : modalActions}
+      {isCheckout ? <Checkout onConfirm={submitOrderHandler} onCancel={onHideCart} /> : modalActions}
     </>);
   const isSubmittingModalContent = <p>Sending order data...</p>;
   const didSubmitModalContent = (
     <>
       <p>Successfully sent the order!!</p>
       <div className={classes.actions}>
-        <button className={classes.button} onClick={props.onHideCart}>Close</button>
+        <button className={classes.button} onClick={onHideCart}>Close</button>
       </div>
     </>
   );
   return (
-    <Modal onClick={props.onHideCart}>
+    <Modal onClick={onHideCart}>
       {!isSubmitting && !didSubmit && cartModalContent}
       {isSubmitting && isSubmittingModalContent}
       {!isSubmitting && didSubmit && didSubmitModalContent}

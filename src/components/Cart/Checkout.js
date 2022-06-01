@@ -4,7 +4,7 @@ import classes from './Checkout.module.css';
 const isEmpty = value => value.trim() === '';
 const isNotThreeChars = value => value.trim().length !== 3;
 
-const Checkout = (props) => {
+const Checkout = ({ onConfirm, onCancel }) => {
   const [formInputsValidity, setFormInputsValidity] = useState({
     name: true,
     street: true,
@@ -43,7 +43,7 @@ const Checkout = (props) => {
       return;
     }
 
-    props.onConfirm({
+    onConfirm({
       name: enteredName,
       street: enteredStreet,
       postal: enteredPostal,
@@ -74,7 +74,7 @@ const Checkout = (props) => {
         {!formInputsValidity.city && <p>Please enter a vaild city!</p>}
       </div>
       <div className={classes.actions}>
-        <button type='button' onClick={props.onCancel}>
+        <button type='button' onClick={onCancel}>
           Cancel
         </button>
         <button className={classes.submit}>Confirm</button>

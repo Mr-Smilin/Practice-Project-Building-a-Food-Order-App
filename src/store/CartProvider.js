@@ -54,7 +54,7 @@ const cartReducer = (state, action) => {
   return defaultCartState;
 };
 
-const CartProvider = props => {
+const CartProvider = ({ children }) => {
   const [cartState, dispatchCartAction] = useReducer(cartReducer, defaultCartState);
 
   const addItemToCartHandler = item => {
@@ -78,7 +78,7 @@ const CartProvider = props => {
   };
 
   return <CartContext.Provider value={cartContext}>
-    {props.children}
+    {children}
   </CartContext.Provider>
 };
 
