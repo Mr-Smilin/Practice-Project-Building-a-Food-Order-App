@@ -1,11 +1,17 @@
-import React from 'react';
+import { useState } from 'react';
 import Header from './components/Layout/Header';
 import Meals from './components/Meals/Meals';
 import Cart from './components/Cart/Cart';
 import CartProvider from './store/CartProvider';
 
+// css
+import './style/header.css';
+import './style/meals.css';
+import './style/ui.css';
+import './style/card.css';
+
 function App() {
-  const [cartIsShown, setCartIsShown] = React.useState(false);
+  const [cartIsShown, setCartIsShown] = useState(false);
 
   const showCartHandler = () => {
     setCartIsShown(true);
