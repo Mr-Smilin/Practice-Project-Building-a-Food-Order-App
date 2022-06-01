@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Practice-Project-Building-a-Food-Order-App/static/css/main.2953b363.chunk.css",
-    "main.js": "/Practice-Project-Building-a-Food-Order-App/static/js/main.47da1609.chunk.js",
-    "main.js.map": "/Practice-Project-Building-a-Food-Order-App/static/js/main.47da1609.chunk.js.map",
+    "main.js": "/Practice-Project-Building-a-Food-Order-App/static/js/main.abe0a950.chunk.js",
+    "main.js.map": "/Practice-Project-Building-a-Food-Order-App/static/js/main.abe0a950.chunk.js.map",
     "runtime-main.js": "/Practice-Project-Building-a-Food-Order-App/static/js/runtime-main.6ef9de51.js",
     "runtime-main.js.map": "/Practice-Project-Building-a-Food-Order-App/static/js/runtime-main.6ef9de51.js.map",
     "static/js/2.4f4fe33e.chunk.js": "/Practice-Project-Building-a-Food-Order-App/static/js/2.4f4fe33e.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.6ef9de51.js",
     "static/js/2.4f4fe33e.chunk.js",
     "static/css/main.2953b363.chunk.css",
-    "static/js/main.47da1609.chunk.js"
+    "static/js/main.abe0a950.chunk.js"
   ]
 }
