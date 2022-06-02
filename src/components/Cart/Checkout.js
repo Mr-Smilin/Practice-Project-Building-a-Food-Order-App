@@ -39,9 +39,7 @@ const Checkout = ({ onConfirm, onCancel }) => {
 
     const formIsValid = enteredNameIsValid && enteredStreetIsValid && enteredPostalIsValid && enteredCityIsValid;
 
-    if (!formIsValid) {
-      return;
-    }
+    if (!formIsValid) return;
 
     onConfirm({
       name: enteredName,

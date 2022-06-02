@@ -4,8 +4,8 @@ import HeaderCartButton from './HeaderCartButton';
 import mealsImage from '../../assets/meals.jpg';
 import classes from './Header.module.css';
 
-const Header = ({ onShowCart }) => {
-  return <>
+const Header = ({ onShowCart }) => (
+  <>
     <header className={classes.header}>
       <h1>ReactMeals</h1>
       <HeaderCartButton onClick={onShowCart}></HeaderCartButton>
@@ -14,6 +14,6 @@ const Header = ({ onShowCart }) => {
       <img src={mealsImage} alt='mealsImage' />
     </div>
   </>
-}
+);
 
 export default Header;
