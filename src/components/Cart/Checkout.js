@@ -53,27 +53,27 @@ const Checkout = ({ onConfirm, onCancel }) => {
   return (
     <form className='checkout-root' onSubmit={confirmHandler}>
       <div className={`checkout__control ${!formInputsValidity.name && 'checkout__control-invalid'}`}>
-        <label htmlFor='name'>Your Name</label>
-        <input type='text' id='name' ref={nameInputRef} />
+        <label className='checkout__control__label' htmlFor='name'>Your Name</label>
+        <input className='checkout__control__input' type='text' id='name' ref={nameInputRef} />
         {!formInputsValidity.name && <p>Please enter a vaild name!</p>}
       </div>
       <div className={`checkout__control ${!formInputsValidity.street && 'checkout__control-invalid'}`}>
-        <label htmlFor='street'>Street</label>
-        <input type='text' id='street' ref={streetInputRef} />
+        <label className='checkout__control__label' htmlFor='street'>Street</label>
+        <input className='checkout__control__input' type='text' id='street' ref={streetInputRef} />
         {!formInputsValidity.street && <p>Please enter a vaild street!</p>}
       </div>
       <div className={`checkout__control ${!formInputsValidity.postal && 'checkout__control-invalid'}`}>
-        <label htmlFor='postal'>Postal Code</label>
-        <input type='text' id='postal' ref={postalInputRef} />
+        <label className='checkout__control__label' htmlFor='postal'>Postal Code</label>
+        <input className='checkout__control__input' type='text' id='postal' ref={postalInputRef} />
         {!formInputsValidity.postal && <p>Please enter a vaild postal (3 characters long)!</p>}
       </div>
       <div className={`checkout__control ${!formInputsValidity.city && 'checkout__control-invalid'}`}>
-        <label htmlFor='city'>City</label>
-        <input type='text' id='city' ref={cityInputRef} />
+        <label className='checkout__control__label' htmlFor='city'>City</label>
+        <input className='checkout__control__input' type='text' id='city' ref={cityInputRef} />
         {!formInputsValidity.city && <p>Please enter a vaild city!</p>}
       </div>
       <div className='checkout__actions'>
-        <button type='button' onClick={onCancel}>
+        <button className='checkout__actions__button' type='button' onClick={onCancel}>
           Cancel
         </button>
         <button className='checkout__actions__submit'>Confirm</button>

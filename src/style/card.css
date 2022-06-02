@@ -19,7 +19,8 @@
   text-align: right;
 }
 
-.actions-root button {
+.actions-root .actions__button,
+.actions-root .actions__button-alt {
   font: inherit;
   cursor: pointer;
   background-color: transparent;
@@ -29,8 +30,10 @@
   margin-left: 1rem;
 }
 
-.actions-root button:hover,
-.actions-root button:active {
+.actions-root .actions__button:hover,
+.actions-root .actions__button-alt:hover,
+.actions-root .actions__button:active,
+.actions-root .actions__button-alt:active {
   background-color: #5a1a01;
   border-color: #5a1a01;
   color: white;
@@ -54,7 +57,7 @@
   margin: 1rem 0;
 }
 
-.card__item h2 {
+.card__item .card__item__title {
   margin: 0 0 0.5rem 0;
   color: #363636;
 }
@@ -79,18 +82,18 @@
   color: #363636;
 }
 
-.card__actions {
+.card__item__actions {
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: 768px) {
-  .card__actions {
+  .card__item__actions {
     flex-direction: row;
   }
 }
 
-.card__item button {
+.card__item  .card__item__actions__button {
   font: inherit;
   font-weight: bold;
   font-size: 1.25rem;
@@ -105,8 +108,8 @@
   margin: 0.25rem;
 }
 
-.card__item button:hover,
-.card__item button:active {
+.card__item .card__item__actions__button:hover,
+.card__item .card__item__actions__button:active {
   background-color: #8a2b06;
   color: white;
 }
@@ -141,7 +144,7 @@
   gap: 1rem;
 }
 
-.checkout__actions button {
+.checkout__actions .checkout__actions__button {
   font: inherit;
   color: #5a1a01;
   cursor: pointer;
@@ -151,8 +154,8 @@
   padding: 0.5rem 2rem; 
 }
 
-.checkout__actions button:hover,
-.checkout__actions button:active {
+.checkout__actions .checkout__actions__button:hover,
+.checkout__actions .checkout__actions__button:active {
   background-color: #ffe6dc;
 }
 
@@ -167,11 +170,11 @@
   background-color: #7a2706;
 }
 
-.checkout__control-invalid label {
+.checkout__control-invalid .checkout__control__label {
   color: #ca3e51;
 }
 
-.checkout__control-invalid input {
+.checkout__control-invalid .checkout__control__input {
   border-color: #aa0b20;
   background-color: #ffeff1;
 }

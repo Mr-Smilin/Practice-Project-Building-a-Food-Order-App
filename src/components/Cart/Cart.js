@@ -49,7 +49,7 @@ const Cart = ({ onHideCart }) => {
     </ul>);
   const hasItem = cartCtx.items.length > 0;
   const modalActions = (<div className='actions-root'>
-    <button className={'actions__button-alt'} onClick={onHideCart}>Close</button>
+    <button className='actions__button-alt' onClick={onHideCart}>Close</button>
     {hasItem && <button className='actions__button' onClick={orderHandler}>Order</button>}
   </div>);
   const cartModalContent = (

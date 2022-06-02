@@ -56,13 +56,15 @@ const AvailableMeals = () => {
 
   const mealsList = meals.map(meal => <MealItem key={meal.id} id={meal.id} name={meal.name} description={meal.description} price={meal.price} />);
 
-  return <section className='meals-root'>
-    <Card className='meals__card'>
-      <ul>
-        {mealsList}
-      </ul>
-    </Card>
-  </section>
+  return (
+    <section className='meals-root'>
+      <Card className='meals__card'>
+        <ul className='AvailableMeals__ul'>
+          {mealsList}
+        </ul>
+      </Card>
+    </section>
+  );
 };
 
 export default AvailableMeals;

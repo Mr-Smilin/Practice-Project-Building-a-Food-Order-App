@@ -1,5 +1,5 @@
-const Card = ({ className = '', children }) => {
-  return <div className={className}>{children}</div>
-}
+const Card = ({ className = '', children }) => (
+  <div className={className}>{children}</div>
+);
 
 export default Card;

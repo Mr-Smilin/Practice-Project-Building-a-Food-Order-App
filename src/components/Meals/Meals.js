@@ -1,11 +1,11 @@
 import MealSummary from './MealsSummary';
 import AvailableMeals from './AvailableMeals';
 
-const Meals = () => {
-  return <>
+const Meals = () => (
+  <>
     <MealSummary />
     <AvailableMeals />
   </>
-};
+);
 
 export default Meals;
